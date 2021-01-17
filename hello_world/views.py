@@ -8,7 +8,7 @@ from flask import request
 
 
 
-moje_imie = "Alek"
+moje_imie = "Lukasz"
 
 msg = "Hello World!"
 
