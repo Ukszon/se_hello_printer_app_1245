@@ -17,3 +17,11 @@ test:
 run:
 
 	python main.py
+	
+docker_build:
+	docker build -t hello-world-printer .
+	
+dockre_run: docker_build
+			dockre_run
+			--name hello-world-printer
+			-p 500

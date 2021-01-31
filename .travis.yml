@@ -1,8 +1,13 @@
 language: python
 python:
     - "3.6"
+service:
+    - docker
 install:
     - make deps
 script:
     - make lint
     - make test
+    
+after_succes:
+    - make docker_build
